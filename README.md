@@ -11,23 +11,23 @@
   <a href="https://drive.google.com/file/d/1Ee50RzTc1RrLLRBbr1HwRsAgzM0vrz8z/view?usp=sharing"> PPT link </a>
 
 ## 🖥️ Tech Stack
-**Frontend:**
+*Frontend:*
 
 ![reactjs](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)&nbsp;
 ![react-router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)&nbsp;
 
-**Backend:**
+*Backend:*
 
 ![nodejs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;
 ![expressjs](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)&nbsp;
 ![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)&nbsp;
 
-**Realtime Communication:**
+*Realtime Communication:*
 
 ![socketio](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)
 ![webRTC](https://img.shields.io/badge/WEBRTC-010101?&style=for-the-badge&logo=webrtc&logoColor=white)
 
-**ChatBot:**
+*Chat Bot:*
 
 ![DialogFlowApi](https://img.shields.io/badge/DialogFlowApi-010101?&style=for-the-badge&logo=DialogFlowApi&logoColor=white)
 
@@ -53,4 +53,3 @@ Team Name: Naatu_Naatu_OscarWaale
 
 ### Made at:
 <a href="https://hack36.com"> <img src="https://i.postimg.cc/RFFWF4vg/built-at-hack.jpg" height=24px> </a>
-
