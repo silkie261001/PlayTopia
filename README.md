@@ -1,6 +1,5 @@
 # PlayTopia a project of hack36
 
-# konekt 
 [Visit Now](https:) 🚀
 
 ## 🖥️ Tech Stack
