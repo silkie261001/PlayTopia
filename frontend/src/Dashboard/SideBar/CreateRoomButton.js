@@ -21,7 +21,7 @@ const CreateRoomButton = ({ isUserInRoom }) => {
         minWidth: 0,
         marginTop: '10px',
         color: 'white',
-        backgroundColor: '#cdeac0',
+        backgroundColor: '#1985a1',
       }}
     >
       <AddIcon />
