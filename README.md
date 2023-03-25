@@ -29,7 +29,7 @@
 
 **ChatBot:**
 
-![DialogFlowApi](https://img.shields.io/badge/WEBRTC-010101?&style=for-the-badge&logo=webrtc&logoColor=white)
+![DialogFlowApi](https://img.shields.io/badge/DialogFlowApi-010101?&style=for-the-badge&logo=DialogFlowApi&logoColor=white)
 
 ## 🚀 Features
 - Login and sign up page. 
