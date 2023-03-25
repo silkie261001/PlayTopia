@@ -7,8 +7,8 @@
 ## Demo Video Link:
   <a href="https://drive.google.com/file/d/1TL3W9zleELPPtRF-gYDrZt4NMiTiHcD3/view?usp=share_link">https://drive.google.com/file/d/1TL3W9zleELPPtRF-gYDrZt4NMiTiHcD3/view?usp=share_link</a>
   
-<!-- ## Presentation Link:
-  <a href="https://cutt.ly/H365PPT"> PPT link </a> -->
+## Presentation Link:
+  <a href="https://drive.google.com/file/d/1Ee50RzTc1RrLLRBbr1HwRsAgzM0vrz8z/view?usp=sharing"> PPT link </a>
 
 ## 🖥️ Tech Stack
 **Frontend:**
