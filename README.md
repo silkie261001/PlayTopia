@@ -27,6 +27,9 @@
 ![socketio](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)
 ![webRTC](https://img.shields.io/badge/WEBRTC-010101?&style=for-the-badge&logo=webrtc&logoColor=white)
 
+**Realtime Communication:**
+![DialogFlowApi](https://aragonresearch.com/wp-content/uploads/2018/09/dialogflow1.png)
+
 ## 🚀 Features
 - Login and sign up page. 
 - Offers text chatting, audio and video calls.
