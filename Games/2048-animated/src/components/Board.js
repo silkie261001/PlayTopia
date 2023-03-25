@@ -53,7 +53,7 @@ const BoardView = () => {
           New Game
         </div>
         <div className="score-box">
-          <div className="score-header">PUNTOS</div>
+          <div className="score-header">POINTS</div>
           <div>{board.score}</div>
         </div>
       </div>
