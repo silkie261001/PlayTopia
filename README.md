@@ -2,7 +2,7 @@
 <p align="center">
 </p>
 
-<a href="https://hack36.com"> <img src=https://postimg.cc/PLgXVGpD height=24px> </a>
+<a href="https://hack36.com"> <img src="https://i.postimg.cc/RFFWF4vg/built-at-hack.jpg" height=24px> </a>
 
 ## Demo Video Link:
   <a href="https://drive.google.com/file/d/1TL3W9zleELPPtRF-gYDrZt4NMiTiHcD3/view?usp=share_link">https://drive.google.com/file/d/1TL3W9zleELPPtRF-gYDrZt4NMiTiHcD3/view?usp=share_link</a>
