@@ -1,4 +1,8 @@
-# PlayTopia a project of hack36
+<h1 align="center">Playtopia</h1>
+<p align="center">
+</p>
+
+<a href="https://hack36.com"> <img src="https://cutt.ly/BuiltAtHack36" height=24px> </a>
 
 [Visit Now](https:) 🚀
 
@@ -17,7 +21,7 @@
 **Realtime Communication:**
 
 ![socketio](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)
-![webRTC](https://img.shields.io/badge/WEBRTC-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)
+![webRTC](https://img.shields.io/badge/WEBRTC-010101?&style=for-the-badge&logo=webrtc&logoColor=white)
 
 ## 🚀 Features
 - Login and sign up page. 
