@@ -27,7 +27,7 @@
 ![socketio](https://img.shields.io/badge/Socket.io-010101?&style=for-the-badge&logo=Socket.io&logoColor=white)
 ![webRTC](https://img.shields.io/badge/WEBRTC-010101?&style=for-the-badge&logo=webrtc&logoColor=white)
 
-*ChatBot:*
+*Chat Bot:*
 
 ![DialogFlowApi](https://img.shields.io/badge/DialogFlowApi-010101?&style=for-the-badge&logo=DialogFlowApi&logoColor=white)
 
