@@ -2,9 +2,13 @@
 <p align="center">
 </p>
 
-<a href="https://hack36.com"> <img src="https://cutt.ly/BuiltAtHack36" height=24px> </a>
+<a href="https://hack36.com"> <img src=https://postimg.cc/PLgXVGpD height=24px> </a>
 
-[Visit Now](https:) 🚀
+## Demo Video Link:
+  <a href="https://drive.google.com/file/d/1TL3W9zleELPPtRF-gYDrZt4NMiTiHcD3/view?usp=share_link">https://drive.google.com/file/d/1TL3W9zleELPPtRF-gYDrZt4NMiTiHcD3/view?usp=share_link</a>
+  
+<!-- ## Presentation Link:
+  <a href="https://cutt.ly/H365PPT"> PPT link </a> -->
 
 ## 🖥️ Tech Stack
 **Frontend:**
@@ -43,5 +47,6 @@ Team Name: Naatu_Naatu_OscarWaale
 * [Priya Pachauri](https://github.com/priyapac261) 
 * [Sarah Nasim](https://github.com/SarahN18) 
 
-
+### Made at:
+<a href="https://hack36.com"> <img src="https://i.postimg.cc/RFFWF4vg/built-at-hack.jpg" height=24px> </a>
 
