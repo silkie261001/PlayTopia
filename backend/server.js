@@ -6,7 +6,7 @@ require('dotenv').config();
 const dialogflow = require('@google-cloud/dialogflow');
 const uuid = require('uuid');
 const bodyParser = require('body-parser');
-const port = 5009;
+const port = 5000;
 const sessionId = uuid.v4();
 
 const socketServer = require('./socketServer');

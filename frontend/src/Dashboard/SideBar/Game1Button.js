@@ -1,10 +1,10 @@
 import React from 'react';
 import Button from '@mui/material/Button';
-import SmartToyIcon from '@mui/icons-material/SmartToy';
+import FunctionsIcon from '@mui/icons-material/Functions';
 
-const BotButton = () => {
+const Game1Button = () => {
   function handleClick() {
-    window.location.href = 'http://localhost:5000/';
+    window.location.href = 'http://localhost:3457/';
   }
   return (
     <Button
@@ -21,10 +21,9 @@ const BotButton = () => {
       }}
       onClick={handleClick}
     >
-      <SmartToyIcon />
+      <FunctionsIcon />
     </Button>
   );
 };
 
-export default BotButton;
-// module.exports openChatBot;
+export default Game1Button;
