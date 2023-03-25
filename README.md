@@ -28,7 +28,7 @@
 ![webRTC](https://img.shields.io/badge/WEBRTC-010101?&style=for-the-badge&logo=webrtc&logoColor=white)
 
 **Realtime Communication:**
-![DialogFlowApi](https://aragonresearch.com/wp-content/uploads/2018/09/dialogflow1.png)
+![DialogFlowApi](https://img.shields.io/badge/DialogFlowAPI-010101?&style=for-the-badge&logo=DialogFlowAPI&logoColor=white)
 
 ## 🚀 Features
 - Login and sign up page. 
