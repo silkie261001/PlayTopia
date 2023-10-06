@@ -46,7 +46,7 @@
 - Users can join these rooms with either only audio or both audio and video enabled.
 - Users can also share their screens in private rooms, enabling two-way multistreaming. This feature helps gamers to live stream their games like pubG, GTA, etc.
 - User can play games like 2048 and memory game
-- In-built chatbot, which offers text-to-speech and vice versa, suggests Spotify playlists, look up gaming facts and rules, and cracks jokes.
+- In-built chatbot, which offers text-to-speech and vice versa, suggests Spotify playlists, looks up gaming facts and rules, and cracks jokes.
  
 Team Name: Naatu_Naatu_OscarWaale
 
@@ -60,11 +60,11 @@ Team Name: Naatu_Naatu_OscarWaale
 ## Contributing: 
 If you would like to contribute to Playtopia, you can follow these steps:
 
-Fork the repository
-Create a new branch: git checkout -b new-feature
-Make your changes and commit them: git commit -m "Add new feature"
-Push to the branch: git push origin new-feature
-Create a pull request
+* Fork the repository
+* Create a new branch: git checkout -b new-feature
+* Make your changes and commit them: git commit -m "Add new feature"
+* Push to the branch: git push origin new-feature
+* Create a pull request
 
 ### Made at:
 <a href="https://hack36.com"> <img src="https://i.postimg.cc/RFFWF4vg/built-at-hack.jpg" height=24px> </a>
