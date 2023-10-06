@@ -7,8 +7,10 @@
 ## Demo Video Link:
   <a href="https://www.youtube.com/watch?v=qDIvKMbRTgs&ab_channel=SilkieAgarwal">YouTube video link</a>
   
-## Presentation Link:
-  <a href="https://drive.google.com/file/d/1Ee50RzTc1RrLLRBbr1HwRsAgzM0vrz8z/view?usp=sharing"> PPT link </a>
+## Getting started:
+  To get started with the project, you will need to follow these steps:
+  
+  1. Clone the repository: git clone https://github.com/silkie261001/PlayTopia.git
 
 ## 🖥️ Tech Stack
 *Frontend:*
