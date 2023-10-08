@@ -1,19 +1,22 @@
-const express = require('express');
-const http = require('http');
-const cors = require('cors');
-const mongoose = require('mongoose');
-require('dotenv').config();
-const dialogflow = require('@google-cloud/dialogflow');
-const uuid = require('uuid');
-const bodyParser = require('body-parser');
+const express = require("express");
+const http = require("http");
+const cors = require("cors");
+require("dotenv").config();
+const mongoose = require("mongoose");
+require("dotenv").config();
+const dialogflow = require("@google-cloud/dialogflow");
+const uuid = require("uuid");
+const bodyParser = require("body-parser");
 const port = 5000;
 const sessionId = uuid.v4();
 
-const socketServer = require('./socketServer');
-const authRoutes = require('./routes/authRoutes');
-const friendInvitationRoutes = require('./routes/friendInvitationRoutes');
-// const chatbot = require('../chatbot/app');
-
+const socketServer = require("./socketServer");
+const authRoutes = require("./routes/authRoutes");
+const friendInvitationRoutes = require("./routes/friendInvitationRoutes");
+const chatbotRoutes = require("./routes/chatbotRoutes");
+const memoryGameRoutes = require("./routes/memoryGameRoutes");
+const animatedRoutes = require("./routes/animatedRoutes");
+// require("dotenv").config({ path: "" });
 const PORT = process.env.PORT || process.env.API_PORT;
 
 const app = express();
@@ -26,31 +29,33 @@ app.use(
   })
 );
 
-app.set('view engine', 'html');
-app.use(express.static('public'));
+app.set("view engine", "html");
+app.use(express.static("public"));
 
 // register the routes
-app.use('/api/auth', authRoutes);
-app.use('/api/friend-invitation', friendInvitationRoutes);
-// app.use('/api/chatbot', chatbot);
+app.use("/api/auth", authRoutes);
+app.use("/api/friend-invitation", friendInvitationRoutes);
+app.use("/api/chatbot", chatbotRoutes);
+app.use("/api/memoryGame", memoryGameRoutes);
+app.use("/api/2048animated", animatedRoutes);
 
 app.use(function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', '*'); // Accept request from every domain and respond
+  res.setHeader("Access-Control-Allow-Origin", "*"); // Accept request from every domain and respond
   res.setHeader(
-    'Access-Control-Allow-Methods',
-    'GET, POST, OPTIONS, PUT, PATCH, DELETE'
+    "Access-Control-Allow-Methods",
+    "GET, POST, OPTIONS, PUT, PATCH, DELETE"
   );
   res.setHeader(
-    'Access-Control-Allow-Headers',
-    'X-Requested-With,content-type'
+    "Access-Control-Allow-Headers",
+    "X-Requested-With,content-type"
   );
-  res.setHeader('Access-Control-Allow-Credentials', true);
+  res.setHeader("Access-Control-Allow-Credentials", true);
 
   // Pass to next layer of middleware
   next();
 });
 
-app.post('/send-msg', (req, res) => {
+app.post("/send-msg", (req, res) => {
   runSample(req.body.MSG).then((data) => {
     res.send({ Reply: data });
   });
@@ -60,13 +65,13 @@ app.post('/send-msg', (req, res) => {
  * Send a query to the dialogflow agent, and return the query result.
  * @param {string} projectId The project to be used
  */
-async function runSample(msg, projectId = 'test-chat-bot-app-381318') {
+async function runSample(msg, projectId = "test-chat-bot-app-381318") {
   // A unique identifier for the given session
 
   // Create a new session
   const sessionClient = new dialogflow.SessionsClient({
     keyFilename:
-      'C:/Users/Silikie/OneDrive/Desktop/hack36/hh633/backend/test-chat-bot-app-381318-7f9bf23507a6.json',
+      "C:/Users/Silikie/OneDrive/Desktop/hack36/hh633/backend/test-chat-bot-app-381318-7f9bf23507a6.json",
   });
   const sessionPath = sessionClient.projectAgentSessionPath(
     projectId,
@@ -81,47 +86,60 @@ async function runSample(msg, projectId = 'test-chat-bot-app-381318') {
         // The query to send to the dialogflow agent
         text: msg,
         // The language used by the client (en-US)
-        languageCode: 'en-US',
+        languageCode: "en-US",
       },
     },
   };
 
   // Send request and log result
   const responses = await sessionClient.detectIntent(request);
-  console.log('Detected intent');
+  console.log("Detected intent");
   const result = responses[0].queryResult;
   console.log(`  Query: ${result.queryText}`);
   console.log(`  Response: ${result.fulfillmentText}`);
   if (result.intent) {
     console.log(`  Intent: ${result.intent.displayName}`);
   } else {
-    console.log('  No intent matched.');
+    console.log("  No intent matched.");
   }
   return result.fulfillmentText;
 }
 
-app.get('/chatbot', function (req, res) {
-  res.set({
-    'Access-control-Allow-Origin': '*',
-  });
-  return res.render('index');
-});
+// app.get("/chatbot", function (req, res) {
+//   res.set({
+//     "Access-control-Allow-Origin": "*",
+//   });
+//   return res.render("index");
+// });
 
 app.listen(port, () => {
-  console.log('Running on port' + port);
+  console.log("Running on port" + port);
 });
 
 const server = http.createServer(app);
 socketServer.registerSocketServer(server);
+mongoose.set("strictQuery", false);
 
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-    server.listen(PORT, () => {
-      console.log(`Server is listening on ${PORT}`);
-    });
+// mongoose
+//   .connect(process.env.MONGO_URI)
+//   .then(() => {
+//     server.listen(27017, () => {
+//       console.log(`Server is listening on ${27017}`);
+//     });
+//   })
+//   .catch((err) => {
+//     console.log("database connection failed. Server not started");
+//     console.error(err);
+//   });
+mongoose.connect("mongodb://127.0.0.1:27017/playTopia", {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+const connection = mongoose.connection;
+connection
+  .once("open", () => {
+    console.log("Database connected...");
   })
-  .catch((err) => {
-    console.log('database connection failed. Server not started');
-    console.error(err);
+  .on("error", function (err) {
+    console.log(err);
   });
