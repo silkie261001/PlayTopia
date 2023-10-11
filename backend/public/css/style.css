@@ -484,3 +484,25 @@ ul li{
 #sihul li{
   cursor:pointer;
 }
+
+/* 
+spotify styles 
+*/
+
+.spotify-holder{
+  height:50vh;
+  display: flex;
+  padding-top: 7.5vh;
+ 
+}
+.spotify-holder iframe{
+  margin: 0 0.5vw;
+}
+
+/* some styling for better looking controller's */
+@media screen and (max-width:1300px) { 
+  .spotify-holder{
+    height: 80%;
+    flex-direction: column;
+  }
+}
